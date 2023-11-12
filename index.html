@@ -7,12 +7,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
     <title>Redactr</title>
 </head>
-<body class="flex flex-col my-10 mx-20 h-screen">
+<body class="flex flex-col my-5 mx-3 md:my-10 md:mx-20 h-screen">
     <img class="w-20" src="logo.png" alt="logo">
-    <div class="flex flex-col my-20 mx-auto justify-center max-w-4xl">
+    <div class="flex flex-col my-10 md:my-20 mx-auto justify-center md:max-w-4xl">
         <div class="text-center mb-10 flex flex-col items-center justify-center">
-            <h1 class="text-5xl text-green-800 font-bold">Redactr - Safely Share Your Content</h1>
-            <p class="text-xl font-medium max-w-xl">Scramble portions of the text you don’t want the world to read/see</p>
+            <h1 class="text-xl md:text-5xl text-green-800 font-bold">Redactr - Safely Share Your Content</h1>
+            <p class="pt-2 text-sm md:text-xl font-medium max-w-xl">Scramble portions of the text you don’t want the world to read/see</p>
         </div>
         <div class="w-full flex flex-col gap-3">
             <textarea class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none block w-full rounded-md" id="originalText" placeholder="Paste your text here"></textarea>
@@ -27,14 +27,14 @@
                 <input class="cursor-pointer" type="checkbox" id="scrambleWordOption">
                 <span> Scramble Word</span>
             </div>
-            <button class="mt-5 text-lg px-3 py-2 bg-green-800 hover:bg-green-700 text-white font-semibold shadow-sm focus:outline-none block w-full rounded-md" onclick="redact()">Redact Now</button>
+            <button class="mt-5 text-base md:text-lg px-3 py-2 bg-green-800 hover:bg-green-700 text-white font-semibold shadow-sm focus:outline-none block w-full rounded-md" onclick="redact()">Redact Now</button>
         </div>
         <div id="result" class="my-3.5 p-6 border shadow-sm border-slate-300 bg-green-50 rounded-md">
         </div>
     </div>
 
-    <footer class="sticky bottom-0 text-center">
-        <p>© Copyright 2023 <a class="cursor-pointer text-green-800 hover:underline font-semibold" href="https://github.com/Cozyamy/REDACTR" target="_blank">Amarachi Iheakam</a>. All rights Reserved</p>
+    <footer class="sticky bottom-0 text-center pt-3 bg-white">
+        <p class="md:text-base text-xs">© Copyright 2023 <a class="cursor-pointer text-green-800 hover:underline font-semibold" href="https://github.com/Cozyamy/REDACTR" target="_blank">Amarachi Iheakam</a>. All rights Reserved</p>
     </footer>
     <script src="script.js"></script>
 </body>
